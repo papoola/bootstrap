@@ -71,9 +71,9 @@ describe('timepicker directive', function () {
     return e;
   }
 
-  it('contains three row & three input elements', function() {
+  it('contains three row & four input elements', function() {
     expect(element.find('tr').length).toBe(3);
-    expect(element.find('input').length).toBe(2);
+    expect(element.find('input').length).toBe(3);
     expect(element.find('button').length).toBe(1);
   });
 
@@ -549,7 +549,7 @@ describe('timepicker directive', function () {
     });
 
     function getMeridianTd() {
-      return element.find('tr').eq(1).find('td').eq(3);
+      return element.find('tr').eq(1).find('td').eq(5);
     }
 
     it('initially displays correct time when `show-meridian` is false', function() {
